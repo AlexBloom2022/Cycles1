@@ -1,10 +1,10 @@
 package ru.netology.sqr;
 
 public class SQRService {
-    public int calculateSqrt(int upper, int lower) {
+    public int calculateSqrt(int lower, int upper) {
         int counter = 0;
         for (int i = 10; i <= 99; i++) {
-            if ((i * i <= upper) & (i * i >= lower)) {
+            if ((i * i <= upper && i * i >= lower)) {
                 counter = counter + 1;
             }
         }
